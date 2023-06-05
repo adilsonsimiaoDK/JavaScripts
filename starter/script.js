@@ -74,12 +74,76 @@ Obesity = BMI of 30 or greater
 //  const markHeigherBMI = BMIMark > BMIJohn;
 //  console.log(BMIMark, BMIJohn, markHeigherBMI);
 
-const firstName = 'Adilson';
-const job = 'teacher';
-const birthYear = 1981;
-const year = 2023;
-const Jonas = " I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
-console.log(Jonas);
-const newName = `I'm ${firstName}, a ${year -  birthYear} years old ${job}!`;
-console.log(newName)
-console.log(`Just a regular person`);
+// const firstName = 'Adilson';
+// const job = 'teacher';
+// const birthYear = 1981;
+// const year = 2023;
+// const Jonas = " I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+// console.log(Jonas);
+// const newName = `I'm ${firstName}, a ${year -  birthYear} years old ${job}!`;
+// console.log(newName)
+// console.log(`Just a regular person`);
+
+// type conversions
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18 );
+
+// console.log(Number('Jonas'));
+// console.log(typeof NaN)
+
+// console.log(String(23), 23);
+
+// //type coercion
+// console.log('I am ' + 23 + ' years old' );
+// //converting from string for number with operator ( - )
+// console.log('23' - '10' - 5);
+// //converting all for string and concate with operator( + )
+// console.log('23' + '10' + 5);
+// //converting all for numbers with operators ( * /
+// console.log('23' / '2');
+
+
+// let n = '1'+ 1;
+// n= n - 1;
+// console.log(n)
+
+//falsy values (undefined,'', 0, null, NaN) 
+//Trufy values ({}, 'Strings',)
+
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean({}))
+// console.log(Boolean(''))
+// console.log(Boolean('Jonas'))
+// console.log(Boolean(null))
+// console.log(Boolean(NaN))
+
+// const money = 1;
+// if (money) { 
+//     console.log('Do not spend it all');
+// }else {
+//     console.log(' You should get a job');
+// }
+// let height;
+
+// const age = 18;
+// if (age === 18) console.log('You just became an adult (strict)');
+// if (age === "18") console.log('You just became an adult (loose)');
+
+// const favorite = prompt("What is your favorite colour?");
+// if (favorite == 'green'){ 
+//     alert(`nice Bro your favorite colour is ` + favorite);
+// }
+
+
+// convert from string to number;
+// const favoriteNumber = Number(prompt("What is your favorite number?"));
+// if (favoriteNumber === 23){
+//     console.log('Your favorite number is nice');
+//  }else if (favoriteNumber=== 13){
+//     console.log('nice number em dude');
+//  }else{
+// console.log(' Is not a Number')
+//  }
+
