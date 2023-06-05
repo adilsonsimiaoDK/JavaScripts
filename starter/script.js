@@ -147,3 +147,49 @@ Obesity = BMI of 30 or greater
 // console.log(' Is not a Number')
 //  }
 
+// const day ='thursday';
+// switch (day) {
+//     case 'monday':  
+//         console.log('Plan course structure');
+//         console.log('For to coding meetup');
+//         break;  
+//     case 'tuesday': 
+//         console.log('Prepare Theory videos');
+//         break;
+//     case 'wednesday': 
+//     case 'thursday': 
+//         console.log('write code examples');
+//         break;
+//     case 'friday': 
+//         console.log('record videos');
+//         break;
+//     case 'saturday':
+//     case 'sunday':
+//         console.log('Enjoy the weekend :D');
+//         break;
+//     default:
+//         console.log('Not a  valid day');
+// }    
+// const me ='adilson';
+// console.log(` I'm ${2023-1991} years old ${me}`);
+//const age = 18
+//age >= 19 ? console.log('I like to drink wine') : console.log("You can't drink wine");
+// const drink = age >= 18 ? 'wine' : 'water';
+// console.log(drink);
+// console.log(` I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+const bill = 250;
+
+/* Write your code below. Good luck! 🙂 */
+
+let percent =   100;
+// const tip = bill >= 50 && 300 ? bill / percent * 15: bill / percent * 20;    
+
+// console.log(` Your tip is ${tip}`);
+
+if (bill >= 50 &&  bill <= 300){
+    const tip = bill / percent * 15;
+    console.log(` The bill was ${bill}, the tip was ${tip}, and the total value ${bill+tip}`);
+} else{
+     const tip =  bill/percent*20;
+    console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill+tip}`);
+}
