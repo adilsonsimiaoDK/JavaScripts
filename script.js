@@ -123,16 +123,77 @@ const calcAge1 = function(birthDate) {
 // adilson['facebook'] = '@adilsonsimiao'
 // console.log(adilson.friends[0]);
 
-const adilson = {
-   firstName: 'Adilson',
-   lastName: 'Simiao',
-   birthDate: 1981,
-   job: 'selfDevelopment',
-   friends:['Michele', 'John', 'Smith'],
-   hasDriverLicense: true,
-   calcAge:  function()
+// const adilson = {
+//    firstName: 'Adilson',
+//    lastName: 'Simiao',
+//    birthDate: 1981,
+//    job: 'selfDevelopment',
+//    friends:['Michele', 'John', 'Smith'],
+//    hasDriverLicense: false,
+//    calcAge:  function()
+//    {
+//       return 2023 - this.birthDate;
+//    },
+   
+//    checkDriverLicense: function()
+//    {
+//       if (this.calcAge() >= 18)
+//       {
+//          return console.log(`${this.firstName} is  a ${this.calcAge()} years old has ${this.hasDriverLicense ? 'a' : 'no'} driver's license`);
+//       }
+//    }
+// };
+// console.log(adilson.calcAge());
+// console.log(adilson.checkDriverLicense());
+
+// const mark = {
+//    fullName:'Mark Miller',
+//    mass: 78,
+//    height: 1.69,
+   
+//    calcBMI: function()
+//    {
+//        const markBMI = this.mass /(this.height * this.height);
+//        return markBMI.toFixed(1);
+//    },
+   
+// }
+// const John = {
+//    fullName:'John Smith',
+//    mass: 92,
+//    height: 1.95,
+   
+//    calcBMI: function()
+//    {
+//        const bmi = this.mass /(this.height * this.height);
+//        return jonhBMI.toFixed(1);
+//    },
+   
+// }
+// console.log(`Mark Miller's ${mark.calcBMI()} is higher than   Jonh Smith's BMI ${John.calcBMI()}`);
+const mark = {
+   fullName:'Mark Miller',
+   mass: 78,
+   height: 1.69,
+   
+   
+   calcBMI: function()
    {
-      return 2023 - this.birthDate;
-   }
-};
-console.log(adilson.calcAge());
+       this.bmi = this.mass /(this.height * this.height);
+       return this.bmi.toFixed(1);
+   },
+   
+}
+const john = {
+   fullName:'John Smith',
+   mass: 92,
+   height: 1.95,
+   
+   calcBMI: function()
+   {
+       this.bmi = this.mass /(this.height * this.height);
+       return this.bmi.toFixed(1);
+   },
+   
+}
+console.log(`Mark Miller's ${mark.calcBMI()} is higher than Jonh Smith's BMI ${john.calcBMI()}`);
