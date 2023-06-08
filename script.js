@@ -89,17 +89,50 @@ const calcAge1 = function(birthDate) {
     
 // }
 // checkWinner(500, scoreKoalas);
-const friends = ['Michele', 'John', 'Smith', ];
-const newLength = friends.push('Jay');
-console.log(newLength);
-console.log(friends);
-friends.unshift('Jonny');
-console.log(friends);
-friends.pop();
-console.log(friends);
-console.log(friends.indexOf('John'))
-console.log(friends.indexOf('Adilson'))
-console.log(friends.includes('Adilson'))
-console.log(friends.includes('Jonny'))
+// const friends = ['Michele', 'John', 'Smith', ];
+// const newLength = friends.push('Jay');
+// console.log(newLength);
+// console.log(friends);
+// friends.unshift('Jonny');
+// console.log(friends);
+// friends.pop();
+// console.log(friends);
+// console.log(friends.indexOf('John'))
+// console.log(friends.indexOf('Adilson'))
+// console.log(friends.includes('Adilson'))
+// console.log(friends.includes('Jonny'))
 
+// const adilson = {
+//    firstName: 'Adilson',
+//    lastName: 'Simiao',
+//    age: 2023 - 1981,
+//    job: 'selfDevelopment',
+//    friends:['Michele', 'John', 'Smith']
+// };
+// const nameKey = 'Name';
+// //console.log(adilson.job, adilson['last' + nameKey ])
+// const interestedIn = prompt('What you want to know about adilson? Choose between firstName, lastName, age, job, and friends');
 
+// //console.log(adilson[interestedIn]);
+// if (adilson[interestedIn]){
+//    console.log(adilson[interestedIn]);
+// }else{
+//    console.log('Wrong request! Choose between firstName, lastName, age, job, and friends')
+// }
+// adilson.location = 'Brazil'
+// adilson['facebook'] = '@adilsonsimiao'
+// console.log(adilson.friends[0]);
+
+const adilson = {
+   firstName: 'Adilson',
+   lastName: 'Simiao',
+   birthDate: 1981,
+   job: 'selfDevelopment',
+   friends:['Michele', 'John', 'Smith'],
+   hasDriverLicense: true,
+   calcAge:  function()
+   {
+      return 2023 - this.birthDate;
+   }
+};
+console.log(adilson.calcAge());
