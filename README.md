@@ -1,5 +1,6 @@
 # JavaScript Course
-This repository contains my notes, exercises, and projects related to the JavaScript course I am currently studying. The course provides a comprehensive introduction to JavaScript programming, covering fundamental concepts, best practices, and practical applications.
+This repository contains my notes, exercises, and projects related to the JavaScript course (The Complete JavaScript Course From Zero to Expert)!
+ I am currently studying. The course provides a comprehensive introduction to JavaScript programming, covering fundamental concepts, best practices, and practical applications.
 
 Course Overview
 The JavaScript course is designed to equip students with a solid foundation in JavaScript programming. It covers the following topics:
@@ -30,17 +31,10 @@ Feel free to explore the contents of this repository to gain insights into the J
 
 The projects/ directory contains the projects I have developed during the course. You can access each project's folder to explore the source code, documentation, and any additional resources related to the project.
 
-Resources
-Here are some additional resources that I found helpful during my JavaScript course:
 
-MDN Web Docs: A comprehensive resource for JavaScript documentation, tutorials, and examples.
-
-JavaScript.info: An extensive online JavaScript tutorial that covers a wide range of topics.
-
-Eloquent JavaScript: A book by Marijn Haverbeke that provides a thorough introduction to JavaScript programming.
 
 License
 This repository is licensed under the MIT License. Feel free to reuse and adapt the code and notes for your own learning purposes.
 
 Acknowledgments
-I would like to express my gratitude to the instructors and creators of the JavaScript course for providing valuable content and resources. Their efforts have contributed significantly to my understanding and proficiency in JavaScript programming.
+I would like to express my gratitude to the instructor(Jonas Schmedtmann) JavaScript course for providing valuable content and resources. Him efforts have contributed significantly to my understanding and proficiency in JavaScript programming.
