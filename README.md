@@ -1,5 +1,5 @@
 # JavaScript Course
-This repository contains my notes, exercises, and projects related to the JavaScript course (The Complete JavaScript Course From Zero to Expert (Jonas Schmedtmann) )!
+This repository contains my notes, exercises, and projects related to the JavaScript course (The Complete JavaScript Course From Zero to Expert  by (Jonas Schmedtmann)!
  I am currently studying. The course provides a comprehensive introduction to JavaScript programming, covering fundamental concepts, best practices, and practical applications.
 
 Course Overview
