@@ -11,7 +11,7 @@ What I'm learning
 + ecome job-ready by understanding how JavaScript really works behind the scenes
 + ow to think and work like a developer: problem-solving, researching, workflows
 + avaScript fundamentals: variables, if/else, operators, boolean logic, functions, arrays, objects, loops, strings, etc.
-+ odern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.
++ modern ES6+ from the beginning: arrow functions, destructuring, spread operator, optional chaining (ES2020), etc.
 + Modern OOP: Classes, constructors, prototypal inheritance, encapsulation, etc.
 + Complex concepts like the 'this' keyword, higher-order functions, closures, etc.
 + Asynchronous JavaScript: Event loop, promises, async/await, AJAX calls and APIs
