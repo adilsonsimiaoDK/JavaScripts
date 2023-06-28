@@ -478,36 +478,103 @@ Let's continue with our football betting app! This time, we have a map with a lo
 4. Loop over the events and log them to the console, marking whether it's in the first half or second half (after 45 min) of the game, like this:
       [FIRST HALF] 17: ⚽️ GOAL
 
-GOOD LUCK 😀
+GOOD LUCK 😀 :grinning:
 */
 
-const gameEvents = new Map([
-  [17, '⚽️ GOAL'],
-  [36, '🔁 Substitution'],
-  [47, '⚽️ GOAL'],
-  [61, '🔁 Substitution'],
-  [64, '🔶 Yellow card'],
-  [69, '🔴 Red card'],
-  [70, '🔁 Substitution'],
-  [72, '🔁 Substitution'],
-  [76, '⚽️ GOAL'],
-  [80, '⚽️ GOAL'],
-  [92, '🔶 Yellow card'],
-]);
-let points = 0;
-const events = [...new Set(gameEvents.values())]
-gameEvents.delete(64)
+// const gameEvents = new Map([
+  // [17, '⚽️ GOAL'],
+  // [36, '🔁 Substitution'],
+  // [47, '⚽️ GOAL'],
+  // [61, '🔁 Substitution'],
+  // [64, '🔶 Yellow card'],
+  // [69, '🔴 Red card'],
+  // [70, '🔁 Substitution'],
+  // [72, '🔁 Substitution'],
+  // [76, '⚽️ GOAL'],
+  // [80, '⚽️ GOAL'],
+  // [92, '🔶 Yellow card'],
+// ]);
+// let points = 0;
+// const events = [...new Set(gameEvents.values())]
+// gameEvents.delete(64)
+// 
+// console.log(`"An event happened, on average, every ${90 / gameEvents.size} minutes` )
+// const time =[...gameEvents.keys()].pop
+//  
+// 
+// 
+// 
+// for(const [min, event] of gameEvents.entries()){
+// const half = min  <=45 ? 'FIRST': 'SECOND';
+// console.log(`[ ${half} 'HALF' ${min}: ${event} ]`) 
+// }
+// const airline = 'TAP Air Portugal';
+// const plane = 'A320';
+// console.log(airline.slice(4));
+// console.log(airline.slice(4, 7));
+// console.log(airline.slice(1, -1));
+// console.log(new String('adilson'));
+// 
+// 
+// 
+// console.log(airline.slice(0, airline.indexOf(' ')));
+// console.log(airline.slice(0, airline.lastIndexOf(' ') + 1));
+// 
+// const checkMiddleSeat = function(seat){
+  // const s  = seat.slice(-1);
+  // if ( s === "B" || s ==="E"){
+    // console.log(`${seat} Are middle seats`);
+  // }else console.log('You got lucky :');
+// }
+// checkMiddleSeat('11B')
+// checkMiddleSeat('23A')
+// 
+// console.log(typeof new String('adilson'));
+// console.log(typeof new String('adilson').slice(1));
+// const passenger = ' AdiLsoN'
+// const passengerUppercase =passenger.toUpperCase().slice(1);
+// const passengerlowercase =passenger.toLowerCase();
+// console.log(passengerUppercase);
+// 
+// const email = "adilsosnimiao@email.com";
+// const loginemail = " Adilsosnimiao@email.com ";
+// const normalizeEmail = loginemail.toLowerCase().trim();
+// console.log(email=== normalizeEmail);
+// const announcement = "All passengerscome to boarding door 23. Bording door 23"
+// console.log(announcement.replaceAll('door', 'gate'))
+// console.log(announcement.includes('door'))
+// 
+// console.log(announcement.replaceAll(/door/g, 'gate'))
+// console.log(announcement.endsWith('23'))
+const firstName = 'adilson'
+const lastName = 'simiao'
 
-console.log(`"An event happened, on average, every ${90 / gameEvents.size} minutes` )
-const time =[...gameEvents.keys()].pop
- 
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join(' ');
+console.log(newName)
+const capitalizeName = function(name){
+  const names  = name.split(' ');
+  const namesUpper = [];
+  for (const n of names){
+    //namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(' '));
+};
+capitalizeName('jessica aan smith davis');
+//capitalizeName('adilson simiao');
 
+//padding
+const message = 'Go to gate 23!';
+console.log(message.padStart(25, '+'));
+console.log('adilson'.padStart(10, '+'));
+console.log('adilson'.padEnd(10, '+'));
 
-
-for(const [min, event] of gameEvents.entries()){
-const half = min  <=45 ? 'FIRST': 'SECOND';
-console.log(`[ ${half} 'HALF' ${min}: ${event} ]`) 
+const maskCreditcard = function(number){
+  const str = number + '';
+  const last = str.slice(-4);
+  return(last.padStart(str.length, '*'));
 }
-
-
-
+console.log(maskCreditcard(387373094983209))
+console.log(maskCreditcard(387373094))
+console.log(maskCreditcard("34560945094322"))
+console.log(message.repeat(5))
