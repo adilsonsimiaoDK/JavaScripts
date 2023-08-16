@@ -150,6 +150,23 @@ const calculateTotalDeposit = function (movements) {
 };
 
 calculateTotalDeposit(account1.movements);
+const createUsernames = function(accs){
+  accs.forEach(function (acc){
+    acc.username = acc.owner.toLowerCase()
+    .split(' ')
+    .map(name => name[0])
+    .join('');
+  });
+};
+
+
+//Event handler
+btnLogin.addEventListener('click', function(e){
+  e.preventDefault();
+ accounts.find(acc => acc.owner === inputLoginUsername)
+ const account = accounts.find(acc => acc.owner === 'Jessica Davis');
+})
+
 // totalDepositIn(account1.movements)
 // totalDepositOut(account1.movements)
 /////////////////////////////////////////////////
@@ -363,7 +380,7 @@ GOOD LUCK 😀
 //  const dogsKate  = [5 ,3, 6, 1, 10];
 //  const dogsJulia  = [9, 16, 6, 8, 3];
 //  const  checkDogs = function(dogsJulia, dogsKate){  
-//  const dogJulia = dogsJulia.splice(-4, 2);
+//  const dogJulia = dogsJulia.slice(-4, 2);
 //   console.log(dogJulia); 
 // const dogs = dogJulia.concat(dogsKate)
 //   dogs.forEach(function(dogAge, i){
@@ -417,6 +434,7 @@ TEST DATA 2: [16, 6, 10, 5, 6, 1, 4]
 
 GOOD LUCK 😀
 */
+//chain functio
 // const calcAverageHumanAge = function(ages){
 //   const humanAges = ages.map(age =>  (age <= 2 ? 2 * age : 16 + age * 4));
 // console.log(humanAges);
@@ -430,12 +448,69 @@ GOOD LUCK 😀
 // const avg1 = calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3])
 // const avg2 = calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4])
 
-const euroToUsd = 1.1;
-const  totaldepositUsd = movements.
-filter(mov => mov > 0)
-//.map(mov => mov * euroToUsd)
-.map((mov, i, arr) =>{
-  console.log(arr); 
-  return mov * euroToUsd})
-.reduce((acc, mov) => acc + mov, 0)
-console.log(totaldepositUsd);
+// const euroToUsd = 1.1;
+// const  totaldepositUsd = movements.
+// filter(mov => mov > 0)
+// //.map(mov => mov * euroToUsd)
+// .map((mov, i, arr) =>{
+//   console.log(arr); 
+//   return mov * euroToUsd})
+// .reduce((acc, mov) => acc + mov, 0)
+// console.log(totaldepositUsd);
+
+//Arrow Function
+// const calcAverageHumanAge = ages =>
+// ages.map(age =>  (age <= 2 ? 2 * age : 16 + age * 4))
+// .filter(humanAges => humanAges > 18)
+// .reduce((age, cur, i, arr) => age + cur / arr.length,0);
+
+// const calcAverageHumanAge1 = (ages) => {
+//   const humanAges = ages
+//     .map((age) => (age <= 2 ? 2 * age : 16 + age * 4))
+//     .filter((humanAge) => humanAge > 18)
+//     .reduce((age, cur,i, arr) => age + cur / arr.length, 0); // Fixed parentheses
+    
+  
+//   return humanAges;
+// };
+
+
+// console.log(calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]));
+// console.log(calcAverageHumanAge1([5, 2, 4, 1, 15, 8, 3]));
+// const firstWithdrawal = movements.find(mov => mov <0);
+// console.log(movements);
+// console.log(firstWithdrawal);
+
+// const account = accounts.find(acc => acc.owner === 'Jessica Davis');
+// const accou = accounts.find(acc => acc.owner === 'Jessica Davis');
+// console.log(account, accou);
+// test
+// const numbers = [1,2,6,4,9,3, 10]
+// const sum = numbers.reduce((acc, cur ) => acc  + cur, 0)
+// console.log(sum);
+
+// const names = ['adilson', 'claudia', 'cissa', 'marcos']
+// const newNames = names.map(nameUp => nameUp.charAt(0).toUpperCase() + nameUp.slice(1))
+// console.log(newNames);
+
+// const pair = numbers.filter(number => number % 2 ===0)
+// console.log(pair);
+
+// const people = [
+//   { nome: 'João', idade: 16 },
+//   { nome: 'Maria', idade: 17 },
+//   { nome: 'Pedro', idade: 13 },
+//   { nome: 'Ana', idade: 25 }
+// ];
+
+// const ageUp = people.find(age => age.idade > 18)
+// const ageUp2 = numbers.find(age => age > 6)
+// console.log(ageUp);
+// console.log(ageUp2);
+// /*
+// Dado um array de palavras, 
+// use o método forEach com uma arrow function 
+// para imprimir cada palavra seguida pelo seu comprimento.
+// */
+// const wordSize = names.forEach((word) =>{ console.log(word + ' ' + word.length); })
+
