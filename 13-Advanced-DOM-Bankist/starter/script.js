@@ -1,5 +1,14 @@
 'use strict';
 
+const tabs = document.querySelectorAll('.operations__tab');
+const tabsContainer = document.querySelector('.operations__tab-container');
+const tabsContent = document.querySelectorAll('.operations__content');
+const nav = document.querySelector('.nav');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+
 // Scroll to an element with the ID "targetElement"
 
 //page  navigation
@@ -32,13 +41,43 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   }
 });
 
+//Tabbed components
+
+//tabs.forEach(ta => ta.addEventListener('click', () => console.log('Hoi TAB')));
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => {
+    // Remove 'active' class from all tabs
+    tabs.forEach(t => t.classList.remove('active'));
+
+    // Add 'active' class to the clicked tab
+    tab.classList.add('active');
+
+    // Hide all tab content
+    tabsContent.forEach(content => {
+      content.style.display = 'none';
+    });
+
+    // Show the content associated with the clicked tab
+    tabsContent[index].style.display = 'block';
+  });
+});
+//menu fade animation
+nav.addEventListener('mouseover', function (e) {
+  if (e.target.classList.contains('nav__link')) {
+    const clicked = e.target;
+    console.log(clicked);
+    const siblings = clicked.closest('.nav').querySelectorAll('.nav__link');
+    const logo = clicked.closest('.nav').querySelector('img');
+    console.log('Hoi');
+    siblings.forEach(el => {
+      if (el !== clicked) el.style.opacity = 1;
+    });
+    logo.style.opacity = 1;
+  }
+});
 ///////////////////////////////////////
 // Modal window
-
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector('.btn--close-modal');
-const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 
 const openModal = function (e) {
   e.preventDefault;
