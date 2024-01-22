@@ -1,0 +1,2 @@
+console.log("Exporting module"),console.log("Start fetching users");const o=[];function e(e,n){o.push({product:e,quantity:n}),console.log(`${n} ${e} added to cart`)}console.log("Importing module"),e("pizza",2),e("bread",5),e("apples",4),console.log(o),({name:"John",age:30,greet:()=>{console.log(`Hello, my name is ${(void 0).name} and I'm ${(void 0).age} years old.`)}}).greet().bind();
+//# sourceMappingURL=index.d4a17b13.js.map
